@@ -78,8 +78,35 @@ namespace CSharp_level1
              */
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
-        //static void Test() { Console.ReadLine(); }
+        static void Vairables()
+        {
+            string name = "ahmed mady";
+            Console.WriteLine(name);
+            int x = 12, y = 13;
+            //wrong
+            Console.WriteLine("x + y = " + x + y);
+            //correct
+            Console.WriteLine("x + y = " + (x + y));
+            double MyDouble = 22.333d;
+            Console.WriteLine("MyDouble = " + MyDouble);
+            float MyFloat = 22.333f;
+            Console.WriteLine("MyFloat = " + MyFloat);
+            char MyChar = '#';
+            Console.WriteLine("MyFloat = " + MyFloat);
+
+            float MyFloat = 22.333f;
+            Console.WriteLine("MyFloat = " + MyFloat);
+
+            Console.ReadLine();
+        }
+        static void ImplicitlyTypedVariables()
+        {
+            var x = 122;
+            var y = 22.55f;
+            var z = "ahmed";
+            Console.WriteLine("x={0} , y={1} , z={2}", x, y, z)
+            Console.ReadLine();
+        }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
 
@@ -91,7 +118,9 @@ namespace CSharp_level1
             //Output();
             //FormattedString();
             //EscapeCharacters();
-            SingleLineMultipleLinesComments();
+            //SingleLineMultipleLinesComments();
+            //Vairables();
+            ImplicitlyTypedVariables();
         }
     }
 }
