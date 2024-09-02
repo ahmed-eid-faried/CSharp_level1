@@ -64,10 +64,20 @@ namespace CSharp_level1
             Console.WriteLine("Alert:");
             Console.WriteLine("\a");
 
-
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
+        static void SingleLineMultipleLinesComments()
+        {  //this is a single line comment 
+            Console.Write("My Name is Mohammed Abu-Hadhoud ");
+            /*
+
+             This is 
+             a multiple line
+             comment.
+
+             */
+            Console.ReadKey();
+        }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
@@ -80,7 +90,8 @@ namespace CSharp_level1
             /////////////////////////////////////////////
             //Output();
             //FormattedString();
-            EscapeCharacters();
+            //EscapeCharacters();
+            SingleLineMultipleLinesComments();
         }
     }
 }
