@@ -91,11 +91,10 @@ namespace CSharp_level1
             Console.WriteLine("MyDouble = " + MyDouble);
             float MyFloat = 22.333f;
             Console.WriteLine("MyFloat = " + MyFloat);
-            char MyChar = '#';
-            Console.WriteLine("MyFloat = " + MyFloat);
-
-            float MyFloat = 22.333f;
-            Console.WriteLine("MyFloat = " + MyFloat);
+            char myChar = '#';
+            Console.WriteLine("myChar = " + myChar);
+            bool myBool = true;
+            Console.WriteLine("myBool = " + myBool);
 
             Console.ReadLine();
         }
@@ -104,7 +103,7 @@ namespace CSharp_level1
             var x = 122;
             var y = 22.55f;
             var z = "ahmed";
-            Console.WriteLine("x={0} , y={1} , z={2}", x, y, z)
+            Console.WriteLine("x={0} , y={1} , z={2}", x, y, z);
             Console.ReadLine();
         }
         //static void Test() { Console.ReadLine(); }
