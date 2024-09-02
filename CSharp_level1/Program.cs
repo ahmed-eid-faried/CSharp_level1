@@ -27,14 +27,20 @@ namespace CSharp_level1
 
         }
 
-
+        static void FormattedString()
+        {
+            Console.WriteLine("Hi, My Name Is {0} And I Live In {1}.", "Ahmed Mady", "Egypt");
+            Console.ReadLine();
+        }
 
 
         static void Main(string[] args)
         {
             //Console.WriteLine("hi, ahmed mady");
             //Console.ReadKey();
-            Output();
+            /////////////////////////////////////////////
+            //Output();
+            FormattedString();
         }
     }
 }
