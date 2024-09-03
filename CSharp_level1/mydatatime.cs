@@ -260,7 +260,7 @@ namespace CSharp_level1
             string S3 = "";
             for (int i = 0; i < NamesList.Length; i++)
             {
-                S3 += NamesList[i];
+                S3 += NamesList[i] + " ";
             }
             Console.WriteLine(S3);
             Console.WriteLine("=======================================================");
