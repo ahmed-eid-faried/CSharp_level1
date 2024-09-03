@@ -287,7 +287,17 @@ namespace CSharp_level1
             Console.WriteLine(Electronics2);
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
+        static void NullableEx()
+        {
+            //  Nullable<int> can be assigned any value
+            //  from -2147483648 to 2147483647, or a null value.
+
+            Nullable<int> i = null;
+            int? i2 = null;
+            Console.WriteLine("Nullable value is = \"" + i + "\"");
+            Console.WriteLine("Nullable value is = \"" + i2 + "\"");
+            Console.ReadKey();
+        }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
@@ -309,7 +319,8 @@ namespace CSharp_level1
             //ImplicitlyTypedVariables();
             //NumbersDatatypes();
             //DefaultValues();
-            Enums();
+            //Enums();
+            NullableEx();
         }
     }
 }
