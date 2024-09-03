@@ -291,13 +291,8 @@ namespace CSharp_level1
             double myDouble = myInt;       // Automatic casting: int to double
             Console.WriteLine(myInt);      // Outputs 17
             Console.WriteLine(myDouble);   // Outputs 17
+            Console.WriteLine(myDouble + 0.3);
             Console.ReadKey();
-
-            //int myInt = 18;
-            //double myDouble = myInt;
-            //Console.WriteLine(myInt);
-            //Console.WriteLine(myDouble);
-            //Console.ReadKey();
         }
 
     }
