@@ -87,7 +87,7 @@ namespace CSharp_level1
         {
             DateTime currentDateTime = DateTime.Now;  //returns current date and time
             DateTime todaysDate = DateTime.Today; // returns today's date
-            DateTime currentDateTimeUTC = DateTime.UtcNow;// returns current UTC date and time
+            DateTime currentDateTimeUTC = DateTime.UtcNow;// returns current UTC date and time الوقت الحالى بتوقيت جرينتش
             DateTime maxDateTimeValue = DateTime.MaxValue; // returns max value of DateTime
             DateTime minDateTimeValue = DateTime.MinValue; // returns min value of DateTime
 
@@ -96,7 +96,6 @@ namespace CSharp_level1
             Console.WriteLine("currentDateTimeUTC: " + currentDateTimeUTC);
             Console.WriteLine("minDateTimeValue: " + minDateTimeValue);
             Console.WriteLine("maxDateTimeValue: " + maxDateTimeValue);
-
 
             Console.ReadKey();
         }
