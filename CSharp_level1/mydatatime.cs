@@ -31,6 +31,27 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
+        public static void CurrentDatetime()
+        {
+            //assigns default value 01/01/0001 00:00:00
+            DateTime dt1 = new DateTime();
+
+            dt1 = DateTime.Now;
+            Console.WriteLine(dt1);
+
+            DateTime dt2 = DateTime.Now;
+            Console.WriteLine(dt2);
+
+            Console.WriteLine(DateTime.Now);
+
+            Console.ReadKey();
+        }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
 
     }
 }

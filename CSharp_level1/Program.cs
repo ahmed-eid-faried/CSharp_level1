@@ -422,7 +422,8 @@ namespace CSharp_level1
             //@struct();
             //@DynamicType();
             //////////////////////////////////////////////
-            MyDateTime.KDateTime();
+            //MyDateTime.KDateTime();
+            MyDateTime.CurrentDatetime();
         }
     }
 }
