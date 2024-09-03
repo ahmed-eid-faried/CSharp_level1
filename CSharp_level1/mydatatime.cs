@@ -60,14 +60,26 @@ namespace CSharp_level1
             Console.WriteLine(DateTime.MaxValue.Ticks); // max value of ticks
             Console.WriteLine("==============================================================================");
             DateTime dt = DateTime.Now;
-            Console.WriteLine("tick ===>>  100-nanosecond");
-            Console.WriteLine("ticks ===>> " + dt.Ticks);
-            Console.WriteLine("Second ===>> " + dt.Second);
-            Console.WriteLine("Minute ===>> " + dt.Minute);
-            Console.WriteLine("Hour ===>> " + dt.Hour);
-            Console.WriteLine("Day ===>> " + dt.Day);
-            Console.WriteLine("Month ===>> " + dt.Month);
-            Console.WriteLine("Year ===>> " + dt.Year);
+            DateTime unixEpoch = DateTimeConverter.unixEpochGregorian;
+
+            // Convert DateTime to various units
+            long ticks = DateTimeConverter.ConvertToTicks(dt, unixEpoch);
+            long seconds = DateTimeConverter.ConvertToSeconds(dt, unixEpoch);
+            double minutes = DateTimeConverter.ConvertToMinutes(dt, unixEpoch);
+            double hours = DateTimeConverter.ConvertToHours(dt, unixEpoch);
+            double days = DateTimeConverter.ConvertToDays(dt, unixEpoch);
+            double weeks = DateTimeConverter.ConvertToWeeks(dt, unixEpoch);
+            double months = DateTimeConverter.ConvertToMonths(dt, unixEpoch);
+            double years = DateTimeConverter.ConvertToYears(dt, unixEpoch);
+
+            Console.WriteLine("tick ===>>  100-nanosecond \nthere are 10 million ticks in one second \nsince January 1, 0001, at 00:00:00.000 in the Gregorian calendar. \n\n");
+            Console.WriteLine("ticks ===>> " + ticks);
+            Console.WriteLine("Second ===>> " + seconds);
+            Console.WriteLine("Minute ===>> " + minutes);
+            Console.WriteLine("Hour ===>> " + hours);
+            Console.WriteLine("Day ===>> " + days);
+            Console.WriteLine("Month ===>> " + months);
+            Console.WriteLine("Year ===>> " + years);
             Console.WriteLine("==============================================================================");
             Console.ReadKey();
         }
@@ -81,48 +93,61 @@ namespace CSharp_level1
 
     internal class DateTimeConverter
     {
-        public DateTime unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        // Specify the Unix epoch
+        public static DateTime unixEpoch1970 = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        public static DateTime Now = DateTime.Now.ToUniversalTime();
+        public static DateTime unixEpochGregorian = new DateTime().ToUniversalTime();
 
-        // Convert DateTime to total seconds since Unix epoch
-        public static long ConvertToSeconds(DateTime dateTime)
+        // Convert DateTime to total seconds since a specified epoch
+        public static long ConvertToSeconds(DateTime dateTime, DateTime epoch)
         {
-            return (long)(dateTime.ToUniversalTime() - unixEpoch).TotalSeconds;
+            return (long)(dateTime.ToUniversalTime() - epoch).TotalSeconds;
         }
 
-        // Convert DateTime to total ticks since Unix epoch
-        public static long ConvertToTicks(DateTime dateTime)
+        // Convert DateTime to total ticks since a specified epoch
+        public static long ConvertToTicks(DateTime dateTime, DateTime epoch)
         {
-            return (dateTime.ToUniversalTime() - unixEpoch).Ticks;
+            return (dateTime.ToUniversalTime() - epoch).Ticks;
         }
 
-        // Convert DateTime to total days since Unix epoch
-        public static double ConvertToDays(DateTime dateTime)
+        // Convert DateTime to total days since a specified epoch
+        public static double ConvertToDays(DateTime dateTime, DateTime epoch)
         {
-            return (dateTime.ToUniversalTime() - unixEpoch).TotalDays;
+            return (dateTime.ToUniversalTime() - epoch).TotalDays;
         }
 
-        // Convert DateTime to total years since Unix epoch
-        public static double ConvertToYears(DateTime dateTime)
+        // Convert DateTime to total years since a specified epoch
+        public static double ConvertToYears(DateTime dateTime, DateTime epoch)
         {
-            return (dateTime.ToUniversalTime() - unixEpoch).TotalDays / 365.25; // Accounts for leap years
+            return (dateTime.ToUniversalTime() - epoch).TotalDays / 365.25; // Accounts for leap years
         }
 
-        // Convert DateTime to total weeks since Unix epoch
-        public static double ConvertToWeeks(DateTime dateTime)
+        // Convert DateTime to total weeks since a specified epoch
+        public static double ConvertToWeeks(DateTime dateTime, DateTime epoch)
         {
-            return (dateTime.ToUniversalTime() - unixEpoch).TotalDays / 7;
+            return (dateTime.ToUniversalTime() - epoch).TotalDays / 7;
         }
 
-        // Convert DateTime to total minutes since Unix epoch
-        public static double ConvertToMinutes(DateTime dateTime)
+        // Convert DateTime to total minutes since a specified epoch
+        public static double ConvertToMinutes(DateTime dateTime, DateTime epoch)
         {
-            return (dateTime.ToUniversalTime() - unixEpoch).TotalMinutes;
+            return (dateTime.ToUniversalTime() - epoch).TotalMinutes;
         }
 
-        // Convert DateTime to total hours since Unix epoch
-        public static double ConvertToHours(DateTime dateTime)
+        // Convert DateTime to total hours since a specified epoch
+        public static double ConvertToHours(DateTime dateTime, DateTime epoch)
         {
-            return (dateTime.ToUniversalTime() - unixEpoch).TotalHours;
+            return (dateTime.ToUniversalTime() - epoch).TotalHours;
+        }
+
+        // Convert DateTime to total months since a specified epoch
+        public static int ConvertToMonths(DateTime dateTime, DateTime epoch)
+        {
+            int years = dateTime.Year - epoch.Year;
+            int months = dateTime.Month - epoch.Month;
+
+            // Total months calculation
+            return years * 12 + months;
         }
     }
 }
