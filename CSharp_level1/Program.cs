@@ -352,8 +352,8 @@ namespace CSharp_level1
         {
             public string FirstName;
             public string LastName;
+            public byte Age;
         }
-
         static void @struct()
         { //A struct object can be created with or without the new operator,
             //same as primitive type variables.
@@ -362,20 +362,23 @@ namespace CSharp_level1
             stStudent Student2 = new stStudent();
 
 
-            Student.FirstName = "Mohammed";
-            Student.LastName = "Abu-Hadhoud";
-
+            Student.FirstName = "Ahmed";
+            Student.LastName = "MADY";
+            Student.Age = 27;
+            
 
             Console.WriteLine(Student.FirstName);
             Console.WriteLine(Student.LastName);
+            Console.WriteLine(Student.Age);
 
 
             Student2.FirstName = "Ali";
             Student2.LastName = "Ahmed";
-
+            Student2.Age = 28;
 
             Console.WriteLine(Student2.FirstName);
             Console.WriteLine(Student2.LastName);
+            Console.WriteLine(Student2.Age);
 
             Console.ReadKey();
         }
