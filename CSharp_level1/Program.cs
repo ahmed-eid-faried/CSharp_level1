@@ -365,7 +365,7 @@ namespace CSharp_level1
             Student.FirstName = "Ahmed";
             Student.LastName = "MADY";
             Student.Age = 27;
-            
+
 
             Console.WriteLine(Student.FirstName);
             Console.WriteLine(Student.LastName);
@@ -382,7 +382,22 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
+        static void @DynamicType()
+        {
+            dynamic MyDynamicVar = 100;
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            MyDynamicVar = "Hello World!!";
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            MyDynamicVar = true;
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            MyDynamicVar = DateTime.Now;
+            Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
+
+            Console.ReadKey();
+        }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
@@ -404,7 +419,8 @@ namespace CSharp_level1
             //Enums();
             //NullableEx();
             //AnonymousType();
-            @struct();
+            //@struct();
+            @DynamicType();
         }
     }
 }
