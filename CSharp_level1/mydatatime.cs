@@ -275,12 +275,9 @@ namespace CSharp_level1
 
         //Implicit Casting(automatically) - converting a smaller type to a larger type size
         //char -> int -> long -> float -> double
-
-        //Explicit Casting(manually) - converting a larger type to a smaller size type
-        //double -> float -> long -> int -> char
-
         public static void ImplicitCasting()
         {
+            //Implicit casting is done automatically when passing a smaller size type to a larger size type
             int myInt = 17;
             double myDouble = myInt;       // Automatic casting: int to double
             Console.WriteLine(myInt);      // Outputs 17
@@ -289,6 +286,8 @@ namespace CSharp_level1
             Console.ReadKey();
         }
 
+        //Explicit Casting(manually) - converting a larger type to a smaller size type
+        //double -> float -> long -> int -> char
         public static void ExplicitCasting()
         {
             //Explicit casting must be done manually by placing the type in parentheses in front of the value.
@@ -298,7 +297,19 @@ namespace CSharp_level1
             Console.WriteLine(myInt);      // Outputs 17
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+
+        public static void TypeConversionMethods()
+        {
+            int myInt = 20;
+            double myDouble = 7.25;
+            bool myBool = true;
+            Console.WriteLine(Convert.ToString(myInt));    // convert int to string
+            Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
+            Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
+            Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }

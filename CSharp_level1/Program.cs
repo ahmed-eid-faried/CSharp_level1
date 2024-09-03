@@ -433,13 +433,13 @@ namespace CSharp_level1
             //MyString.Strings();
             //MyString.StringInterpolation();
             //CastingTypes.ImplicitCasting();
-            CastingTypes.ExplicitCasting();
+            //CastingTypes.ExplicitCasting();
+            CastingTypes.TypeConversionMethods();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
-            //CastingTypes.ExplicitCasting();
-         }
+        }
     }
 }
