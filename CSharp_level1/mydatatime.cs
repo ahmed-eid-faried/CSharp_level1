@@ -101,20 +101,25 @@ namespace CSharp_level1
         public static void @TimeSpan()
         {
             DateTime dt = new DateTime(2024, 9, 3);
-
             // Hours, Minutes, Seconds
-            TimeSpan ts = new TimeSpan(14, 5, 34);
+            TimeSpan ts = new TimeSpan(38, 13, 33);
+            Console.WriteLine("======================================");
+            Console.WriteLine(dt);
+            Console.WriteLine(dt.Year);
+            Console.WriteLine(dt.Month);
+            Console.WriteLine(dt.Day);
+            Console.WriteLine(dt.DayOfWeek);
+            Console.WriteLine("======================================");
             Console.WriteLine(ts);
             Console.WriteLine(ts.Days);
             Console.WriteLine(ts.Hours);
             Console.WriteLine(ts.Minutes);
             Console.WriteLine(ts.Seconds);
-
+            Console.WriteLine("======================================");
             //this will add time span to the date.
             DateTime newDate = dt.Add(ts);
-
             Console.WriteLine(newDate);
-
+            Console.WriteLine("======================================");
 
             Console.ReadKey();
         }
