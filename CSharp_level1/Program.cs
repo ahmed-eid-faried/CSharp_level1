@@ -423,7 +423,15 @@ namespace CSharp_level1
             //@DynamicType();
             //////////////////////////////////////////////
             //MyDateTime.KDateTime();
-            MyDateTime.CurrentDatetime();
+            //MyDateTime.CurrentDatetime();
+            MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
+            //MyDateTime.TicksAndLimits();
         }
     }
 }

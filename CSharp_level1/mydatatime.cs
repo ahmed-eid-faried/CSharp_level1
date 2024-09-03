@@ -46,7 +46,31 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+
+        public static void TicksAndLimits()
+        {
+            //number of 100-nanosecond intervals that have elapsed
+            //since January 1, 0001, at 00:00:00.000 in the Gregorian calendar. 
+
+            Console.WriteLine("==============================================================================");
+            Console.Write("MinValue ===>> " + DateTime.MinValue + "  ===>> ");  //min value 
+            Console.WriteLine(DateTime.MinValue.Ticks);  //min value of ticks
+            Console.WriteLine("==============================================================================");
+            Console.Write("MaxValue ===>> " + DateTime.MaxValue + "  ===>> "); // max value 
+            Console.WriteLine(DateTime.MaxValue.Ticks); // max value of ticks
+            Console.WriteLine("==============================================================================");
+            DateTime dt = DateTime.Now;
+            Console.Write("tick ===>>  100-nanosecond");
+            Console.Write("ticks ===>> " + dt.Ticks);
+            Console.Write("Second ===>> " + dt.Second);
+            Console.Write("Minute ===>> " + dt.Minute);
+            Console.Write("Hour ===>> " + dt.Hour);
+            Console.Write("Day ===>> " + dt.Day);
+            Console.Write("Month ===>> " + dt.Month);
+            Console.Write("Year ===>> " + dt.Year);
+            Console.WriteLine("==============================================================================");
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
