@@ -60,14 +60,14 @@ namespace CSharp_level1
             Console.WriteLine(DateTime.MaxValue.Ticks); // max value of ticks
             Console.WriteLine("==============================================================================");
             DateTime dt = DateTime.Now;
-            Console.Write("tick ===>>  100-nanosecond");
-            Console.Write("ticks ===>> " + dt.Ticks);
-            Console.Write("Second ===>> " + dt.Second);
-            Console.Write("Minute ===>> " + dt.Minute);
-            Console.Write("Hour ===>> " + dt.Hour);
-            Console.Write("Day ===>> " + dt.Day);
-            Console.Write("Month ===>> " + dt.Month);
-            Console.Write("Year ===>> " + dt.Year);
+            Console.WriteLine("tick ===>>  100-nanosecond");
+            Console.WriteLine("ticks ===>> " + dt.Ticks);
+            Console.WriteLine("Second ===>> " + dt.Second);
+            Console.WriteLine("Minute ===>> " + dt.Minute);
+            Console.WriteLine("Hour ===>> " + dt.Hour);
+            Console.WriteLine("Day ===>> " + dt.Day);
+            Console.WriteLine("Month ===>> " + dt.Month);
+            Console.WriteLine("Year ===>> " + dt.Year);
             Console.WriteLine("==============================================================================");
             Console.ReadKey();
         }
@@ -77,5 +77,52 @@ namespace CSharp_level1
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
 
+    }
+
+    internal class DateTimeConverter
+    {
+        public DateTime unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+        // Convert DateTime to total seconds since Unix epoch
+        public static long ConvertToSeconds(DateTime dateTime)
+        {
+            return (long)(dateTime.ToUniversalTime() - unixEpoch).TotalSeconds;
+        }
+
+        // Convert DateTime to total ticks since Unix epoch
+        public static long ConvertToTicks(DateTime dateTime)
+        {
+            return (dateTime.ToUniversalTime() - unixEpoch).Ticks;
+        }
+
+        // Convert DateTime to total days since Unix epoch
+        public static double ConvertToDays(DateTime dateTime)
+        {
+            return (dateTime.ToUniversalTime() - unixEpoch).TotalDays;
+        }
+
+        // Convert DateTime to total years since Unix epoch
+        public static double ConvertToYears(DateTime dateTime)
+        {
+            return (dateTime.ToUniversalTime() - unixEpoch).TotalDays / 365.25; // Accounts for leap years
+        }
+
+        // Convert DateTime to total weeks since Unix epoch
+        public static double ConvertToWeeks(DateTime dateTime)
+        {
+            return (dateTime.ToUniversalTime() - unixEpoch).TotalDays / 7;
+        }
+
+        // Convert DateTime to total minutes since Unix epoch
+        public static double ConvertToMinutes(DateTime dateTime)
+        {
+            return (dateTime.ToUniversalTime() - unixEpoch).TotalMinutes;
+        }
+
+        // Convert DateTime to total hours since Unix epoch
+        public static double ConvertToHours(DateTime dateTime)
+        {
+            return (dateTime.ToUniversalTime() - unixEpoch).TotalHours;
+        }
     }
 }
