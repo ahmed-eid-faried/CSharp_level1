@@ -427,8 +427,8 @@ namespace CSharp_level1
             //MyDateTime.TicksAndLimits();
             //MyDateTime.DateTimeStaticFields();
             //MyDateTime.@TimeSpan();
-            MyDateTime.SubtractionOfTwoDatesResultsInTimeSpan();
-            //MyDateTime.TicksAndLimits();
+            //MyDateTime.SubtractionOfTwoDatesResultsInTimeSpan();
+            MyDateTime.OperatorsDateTime();
             //MyDateTime.TicksAndLimits();
             //MyDateTime.TicksAndLimits();
             //MyDateTime.TicksAndLimits();
