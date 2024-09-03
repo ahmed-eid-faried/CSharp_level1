@@ -429,9 +429,12 @@ namespace CSharp_level1
             //MyDateTime.@TimeSpan();
             //MyDateTime.SubtractionOfTwoDatesResultsInTimeSpan();
             //MyDateTime.OperatorsDateTime();
-            MyDateTime.ConvertStringToDateTime();
-            //MyDateTime.TicksAndLimits();
-            //MyDateTime.TicksAndLimits();
+            //MyDateTime.ConvertStringToDateTime();
+            //MyString.Strings();
+            MyString.StringInterpolation();
+            //MyString.Strings();
+            //MyString.Strings();
+            //MyString.Strings();
         }
     }
 }
