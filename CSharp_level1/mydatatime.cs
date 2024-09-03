@@ -46,7 +46,6 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-
         public static void TicksAndLimits()
         {
             //number of 100-nanosecond intervals that have elapsed
@@ -101,10 +100,10 @@ namespace CSharp_level1
         }
         public static void @TimeSpan()
         {
-            DateTime dt = new DateTime(2023, 2, 21);
+            DateTime dt = new DateTime(2024, 9, 3);
 
             // Hours, Minutes, Seconds
-            TimeSpan ts = new TimeSpan(49, 25, 34);
+            TimeSpan ts = new TimeSpan(14, 5, 34);
             Console.WriteLine(ts);
             Console.WriteLine(ts.Days);
             Console.WriteLine(ts.Hours);
