@@ -125,12 +125,12 @@ namespace CSharp_level1
         }
         public static void SubtractionOfTwoDatesResultsInTimeSpan()
         {
-            DateTime dt1 = new DateTime(2023, 2, 21);
-            DateTime dt2 = new DateTime(2023, 2, 25);
+            DateTime dt1 = new DateTime().AddDays(2);
+            DateTime dt2 = DateTime.Now;
             TimeSpan result = dt2.Subtract(dt1);
             DateTime result2 = new DateTime().Add(dt2.Subtract(dt1));
 
-            Console.WriteLine(result.Days);
+            Console.WriteLine(result);
             Console.WriteLine(result2);
 
             Console.ReadKey();
