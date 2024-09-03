@@ -220,7 +220,28 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
+        static void DefaultValues()
+        {
+            //get default value using default(type)
+            int i = default(int); // 0
+            float f = default(float);// 0
+            decimal d = default(decimal);// 0
+            bool b = default(bool);// false
+            char c = default(char);// '\0'
+
+            // C# 7.1 onwards
+            //get default value using default
+            int i2 = default; // 0
+            float f2 = default;// 0
+            decimal d2 = default;// 0
+            bool b2 = default;// false
+            char c2 = default;// '\0'
+
+            int j;
+            Console.WriteLine("{0} , {1} , {2} , {3} , {4} , {5} , {6} , {7} , {8} , {9} , {10}",
+                i, f, d, b, c, i2, f2, d2, b2, c2, j);
+            Console.ReadKey();
+        }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
@@ -242,7 +263,8 @@ namespace CSharp_level1
             //SingleLineMultipleLinesComments();
             //Vairables();
             //ImplicitlyTypedVariables();
-            NumbersDatatypes();
+            //NumbersDatatypes();
+            DefaultValues();
         }
     }
 }
