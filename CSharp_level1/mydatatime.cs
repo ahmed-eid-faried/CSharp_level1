@@ -267,12 +267,6 @@ namespace CSharp_level1
             Console.WriteLine("=======================================================");
             Console.ReadKey();
         }
-
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
     }
     internal class CastingTypes
     {
@@ -294,6 +288,20 @@ namespace CSharp_level1
             Console.WriteLine(myDouble + 0.3);
             Console.ReadKey();
         }
+
+        public static void ExplicitCasting()
+        {
+            //Explicit casting must be done manually by placing the type in parentheses in front of the value.
+            double myDouble = 17.88;
+            int myInt = (int)myDouble;    // Manual casting: double to int
+            Console.WriteLine(myDouble);   // Outputs 17.88
+            Console.WriteLine(myInt);      // Outputs 17
+            Console.ReadKey();
+        }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
 
     }
     internal class DateTimeConverter
