@@ -300,6 +300,10 @@ namespace CSharp_level1
 
         public static void TypeConversionMethods()
         {
+            //It is also possible to convert data types explicitly by using built-in methods, such as Convert.ToBoolean,
+            //Convert.ToDouble, Convert.ToString, 
+            //Convert.ToInt32(int) and Convert.ToInt64(long)
+
             int myInt = 20;
             double myDouble = 7.25;
             bool myBool = true;
@@ -310,7 +314,27 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        enum WeekDays
+        {
+            Monday = 0,
+            Tuesday = 1,
+            Wednesday = 2,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday = 6
+        }
+        public static void EnumsConversion()
+        {
+            Console.WriteLine(WeekDays.Friday); //output: Friday 
+            int day = (int)WeekDays.Friday; // enum to int conversion
+            Console.WriteLine(day); //output: 4 
+
+            var wd = (WeekDays)5; // int to enum conversion
+            Console.WriteLine(wd);//output: Saturday 
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
 

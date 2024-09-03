@@ -434,8 +434,8 @@ namespace CSharp_level1
             //MyString.StringInterpolation();
             //CastingTypes.ImplicitCasting();
             //CastingTypes.ExplicitCasting();
-            CastingTypes.TypeConversionMethods();
-            //CastingTypes.ExplicitCasting();
+            //CastingTypes.TypeConversionMethods();
+            CastingTypes.EnumsConversion();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
