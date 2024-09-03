@@ -129,9 +129,11 @@ namespace CSharp_level1
             //  ushort us2 = -32000; //Compile-time error: Constant value '-32000' cannot be converted to a 'ushort'
 
             Console.WriteLine("\nShort:");
+            Console.WriteLine("Min={0} , Max={1}", short.MinValue, short.MaxValue);
             Console.WriteLine("Min={0} , Max={1}", Int16.MinValue, Int16.MaxValue);
 
             Console.WriteLine("\nUShort:");
+            Console.WriteLine("Min={0} , Max={1}", ushort.MinValue, ushort.MaxValue);
             Console.WriteLine("Min={0} , Max={1}", UInt16.MinValue, UInt16.MaxValue);
 
             //int
@@ -143,9 +145,11 @@ namespace CSharp_level1
             // uint ui2 = -1; //Compile-time error: Constant value '-1' cannot be converted to a 'uint'
 
             Console.WriteLine("\nInt:");
+            Console.WriteLine("Min={0} , Max={1}", int.MinValue, int.MaxValue);
             Console.WriteLine("Min={0} , Max={1}", Int32.MinValue, Int32.MaxValue);
 
             Console.WriteLine("\nUInt:");
+            Console.WriteLine("Min={0} , Max={1}", uint.MinValue, uint.MaxValue);
             Console.WriteLine("Min={0} , Max={1}", UInt32.MinValue, UInt32.MaxValue);
 
             //Long
@@ -156,9 +160,11 @@ namespace CSharp_level1
             ulong ul2 = 18223372036854775808UL;
 
             Console.WriteLine("\nLong:");
+            Console.WriteLine("Min={0} , Max={1}", long.MinValue, long.MaxValue);
             Console.WriteLine("Min={0} , Max={1}", Int64.MinValue, Int64.MaxValue);
 
             Console.WriteLine("\nULong:");
+            Console.WriteLine("Min={0} , Max={1}", ulong.MinValue, ulong.MaxValue);
             Console.WriteLine("Min={0} , Max={1}", UInt64.MinValue, UInt64.MaxValue);
 
 
@@ -214,6 +220,15 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
+        //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
 
         static void Main(string[] args)
