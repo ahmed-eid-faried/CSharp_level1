@@ -259,7 +259,7 @@ namespace CSharp_level1
             Automotive = 6, // 6
             Arts,           // 7
             BeautyCare,     // 8
-            Fashion         // 9
+            Fashion = 's'       // s
         }
         //Enum can have any numarical data type byte, sbyte, short, ushort, int, uint, long, or ulong
         //but not string
@@ -275,9 +275,16 @@ namespace CSharp_level1
         static void Enums()
         {
             enWeekDays WeekDays;
-
             WeekDays = enWeekDays.Friday;
             Console.WriteLine(WeekDays);
+
+            enCategories Fashion;
+            Fashion = enCategories.Fashion;
+            Console.WriteLine(Fashion);
+
+            enCategories2 Electronics2;
+            Electronics2 = enCategories2.Electronics;
+            Console.WriteLine(Electronics2);
             Console.ReadKey();
         }
         //static void Test() { Console.ReadLine(); }
