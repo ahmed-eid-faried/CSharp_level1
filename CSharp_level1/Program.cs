@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -298,7 +299,55 @@ namespace CSharp_level1
             Console.WriteLine("Nullable value is = \"" + i2 + "\"");
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
+        static void AnonymousType()
+        {
+            //you dont specify any type here , automatically will be specified
+            var student = new { Id = 30, FirstName = "AHMED", LastName = "MADY" };
+
+            Console.WriteLine("\nExample1:\n");
+            Console.WriteLine(student.Id); //output: 20
+            Console.WriteLine(student.FirstName); //output: Mohammed
+            Console.WriteLine(student.LastName); //output: Abu-Hadhoud
+
+            //You can print like this:
+            Console.WriteLine(student);
+
+
+            //anonymous types are read-only
+            //you cannot change the values of properties as they are read-only.
+
+            // student.Id = 2;//Error: cannot chage value
+            // student.FirstName = "Ali";//Error: cannot chage value
+
+
+            //An anonymous type's property can include another anonymous type.
+            var student2 = new
+            {
+                Id = 1,
+                FirstName = "Ahmed",
+                LastName = "Mady",
+                Address = new
+                {
+                    Id = 1,
+                    City = "Cairo",
+                    Country = "Egypt",
+                }
+            };
+
+            Console.WriteLine("\nExample2:\n");
+            Console.WriteLine(student2.Id);
+            Console.WriteLine(student2.FirstName);
+            Console.WriteLine(student2.LastName);
+
+            Console.WriteLine(student2.Address.Id);
+            Console.WriteLine(student2.Address.City);
+            Console.WriteLine(student2.Address.Country);
+            Console.WriteLine(student2.Address);
+
+
+
+            Console.ReadKey();
+        }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
         //static void Test() { Console.ReadLine(); }
@@ -320,7 +369,8 @@ namespace CSharp_level1
             //NumbersDatatypes();
             //DefaultValues();
             //Enums();
-            NullableEx();
+            //NullableEx();
+            AnonymousType();
         }
     }
 }
