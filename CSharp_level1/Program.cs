@@ -424,8 +424,8 @@ namespace CSharp_level1
             //////////////////////////////////////////////
             //MyDateTime.KDateTime();
             //MyDateTime.CurrentDatetime();
-            MyDateTime.TicksAndLimits();
             //MyDateTime.TicksAndLimits();
+            MyDateTime.DateTimeStaticFields();
             //MyDateTime.TicksAndLimits();
             //MyDateTime.TicksAndLimits();
             //MyDateTime.TicksAndLimits();
