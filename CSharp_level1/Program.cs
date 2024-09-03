@@ -431,8 +431,8 @@ namespace CSharp_level1
             //MyDateTime.OperatorsDateTime();
             //MyDateTime.ConvertStringToDateTime();
             //MyString.Strings();
-            MyString.StringInterpolation();
-            //MyString.Strings();
+            //MyString.StringInterpolation();
+            CastingTypes.ImplicitCasting();
             //MyString.Strings();
             //MyString.Strings();
         }

@@ -292,6 +292,12 @@ namespace CSharp_level1
             Console.WriteLine(myInt);      // Outputs 17
             Console.WriteLine(myDouble);   // Outputs 17
             Console.ReadKey();
+
+            //int myInt = 18;
+            //double myDouble = myInt;
+            //Console.WriteLine(myInt);
+            //Console.WriteLine(myDouble);
+            //Console.ReadKey();
         }
 
     }
