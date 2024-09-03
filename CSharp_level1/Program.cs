@@ -435,8 +435,9 @@ namespace CSharp_level1
             //CastingTypes.ImplicitCasting();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.TypeConversionMethods();
-            CastingTypes.EnumsConversion();
-            //CastingTypes.ExplicitCasting();
+            //CastingTypes.EnumsConversion();
+            //UserInput.ReadLine();
+            UserInput.UserInputAndNumbers();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
