@@ -386,7 +386,7 @@ namespace CSharp_level1
         {
             dynamic MyDynamicVar = 100;
             Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
- 
+
             MyDynamicVar = "Hello World!!";
             Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
 
@@ -420,7 +420,9 @@ namespace CSharp_level1
             //NullableEx();
             //AnonymousType();
             //@struct();
-            @DynamicType();
+            //@DynamicType();
+            //////////////////////////////////////////////
+            MyDateTime.@DateTime();
         }
     }
 }
