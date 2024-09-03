@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Policy;
 
 namespace CSharp_level1
 {
@@ -266,13 +267,34 @@ namespace CSharp_level1
             Console.WriteLine("=======================================================");
             Console.ReadKey();
         }
+
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
     }
+    internal class CastingTypes
+    {
+        //Type casting is when you assign a value of one data type to another type.
+        //In C#, there are two types of casting:
 
+        //Implicit Casting(automatically) - converting a smaller type to a larger type size
+        //char -> int -> long -> float -> double
+
+        //Explicit Casting(manually) - converting a larger type to a smaller size type
+        //double -> float -> long -> int -> char
+
+        public static void ImplicitCasting()
+        {
+            int myInt = 17;
+            double myDouble = myInt;       // Automatic casting: int to double
+            Console.WriteLine(myInt);      // Outputs 17
+            Console.WriteLine(myDouble);   // Outputs 17
+            Console.ReadKey();
+        }
+
+    }
     internal class DateTimeConverter
     {
         // Specify the Unix epoch
