@@ -123,7 +123,18 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void SubtractionOfTwoDatesResultsInTimeSpan()
+        {
+            DateTime dt1 = new DateTime(2023, 2, 21);
+            DateTime dt2 = new DateTime(2023, 2, 25);
+            TimeSpan result = dt2.Subtract(dt1);
+            DateTime result2 = new DateTime().Add(dt2.Subtract(dt1));
+
+            Console.WriteLine(result.Days);
+            Console.WriteLine(result2);
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
 
