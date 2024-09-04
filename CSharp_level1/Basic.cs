@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharp_level1
 {
-    internal class Program
+    internal class Basic
     {
-        static void Output()
+        public static void Output()
         {
             Console.WriteLine("========================WriteLine=========================");
             Console.WriteLine("Hello World!");
@@ -27,13 +26,13 @@ namespace CSharp_level1
             Console.ReadKey();
 
         }
-        static void FormattedString()
+        public static void FormattedString()
         {
             Console.WriteLine("Welcome to {0}", "Egypt");
             Console.WriteLine("Hi, My Name Is {0} And I Live In {1}.", "Ahmed Mady", "Egypt");
             Console.ReadLine();
         }
-        static void EscapeCharacters()
+        public static void EscapeCharacters()
         {
             Console.WriteLine("Useful Escape Characters:\n");
 
@@ -67,7 +66,7 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        static void SingleLineMultipleLinesComments()
+        public static void SingleLineMultipleLinesComments()
         {  //this is a single line comment 
             Console.Write("My Name is Mohammed Abu-Hadhoud ");
             /*
@@ -79,7 +78,7 @@ namespace CSharp_level1
              */
             Console.ReadKey();
         }
-        static void Vairables()
+        public static void Vairables()
         {
             string name = "ahmed mady";
             Console.WriteLine(name);
@@ -99,7 +98,7 @@ namespace CSharp_level1
 
             Console.ReadLine();
         }
-        static void ImplicitlyTypedVariables()
+        public static void ImplicitlyTypedVariables()
         {
             var x = 122;
             var y = 22.55f;
@@ -107,7 +106,7 @@ namespace CSharp_level1
             Console.WriteLine("x={0} , y={1} , z={2}", x, y, z);
             Console.ReadLine();
         }
-        static void NumbersDatatypes()
+        public static void NumbersDatatypes()
         {  //Byte
 
             byte b1 = 255;
@@ -221,7 +220,7 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        static void DefaultValues()
+        public static void DefaultValues()
         {
             //get default value using default(type)
             int i = default(int); // 0
@@ -273,7 +272,7 @@ namespace CSharp_level1
             BeautyCare = 11,
             Fashion = 15
         }
-        static void Enums()
+        public static void Enums()
         {
             enWeekDays WeekDays;
             WeekDays = enWeekDays.Friday;
@@ -288,7 +287,7 @@ namespace CSharp_level1
             Console.WriteLine(Electronics2);
             Console.ReadKey();
         }
-        static void NullableEx()
+        public static void NullableEx()
         {
             //  Nullable<int> can be assigned any value
             //  from -2147483648 to 2147483647, or a null value.
@@ -299,7 +298,7 @@ namespace CSharp_level1
             Console.WriteLine("Nullable value is = \"" + i2 + "\"");
             Console.ReadKey();
         }
-        static void AnonymousType()
+        public static void AnonymousType()
         {
             //you dont specify any type here , automatically will be specified
             var student = new { Id = 30, FirstName = "AHMED", LastName = "MADY" };
@@ -354,7 +353,7 @@ namespace CSharp_level1
             public string LastName;
             public byte Age;
         }
-        static void @struct()
+        public static void @struct()
         { //A struct object can be created with or without the new operator,
             //same as primitive type variables.
 
@@ -382,7 +381,7 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        static void @DynamicType()
+        public static void @DynamicType()
         {
             dynamic MyDynamicVar = 100;
             Console.WriteLine("Value: {0}, Type: {1}", MyDynamicVar, MyDynamicVar.GetType());
@@ -398,80 +397,5 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //static void Test() { Console.ReadLine(); }
-        //static void Test() { Console.ReadLine(); }
-        //static void Test() { Console.ReadLine(); }
-        //static void Test() { Console.ReadLine(); }
-
-        static void Main(string[] args)
-        {
-            //Console.WriteLine("hi, ahmed mady");
-            //Console.ReadKey();
-            ///////////////////////////////////////////
-            Output();
-            FormattedString();
-            EscapeCharacters();
-            SingleLineMultipleLinesComments();
-            Vairables();
-            ImplicitlyTypedVariables();
-            NumbersDatatypes();
-            DefaultValues();
-            Enums();
-            NullableEx();
-            AnonymousType();
-            @struct();
-            @DynamicType();
-            //////////////////////////////////////////////////////////
-            MyDateTime.KDateTime();
-            MyDateTime.CurrentDatetime();
-            MyDateTime.TicksAndLimits();
-            MyDateTime.DateTimeStaticFields();
-            MyDateTime.@TimeSpan();
-            MyDateTime.SubtractionOfTwoDatesResultsInTimeSpan();
-            MyDateTime.OperatorsDateTime();
-            MyDateTime.ConvertStringToDateTime();
-            //////////////////////////////////////////////////////////
-            MyString.Strings();
-            MyString.StringInterpolation();
-            //////////////////////////////////////////////////////////
-            CastingTypes.ImplicitCasting();
-            CastingTypes.ExplicitCasting();
-            CastingTypes.TypeConversionMethods();
-            CastingTypes.EnumsConversion();
-            //////////////////////////////////////////////////////////
-            UserInput.ReadLine();
-            UserInput.UserInputAndNumbers();
-            //////////////////////////////////////////////////////////
-            Operators.ArithmeticOperators();
-            Operators.AssignmentOperators();
-            Operators.RelationalOperators();
-            Operators.LogicalOperators();
-            Operators.UnaryOperators();
-            Operators.BitwiseAndBitShiftOperators();
-            Operators.ExplainBitwiseXOR();
-            Operators.BitwiseComplement();
-            Operators.ShiftOperations();
-            //////////////////////////////////////////////////////////
-            ControlFlow.IfElseIfAndNestedIfStatement();
-            ControlFlow.SwitchStatement();
-            ControlFlow.SimpleCalculator();
-            ControlFlow.StringCompare();
-            ControlFlow.TernaryOperator();
-            ControlFlow.ForLoop();
-            ControlFlow.WhileLoop();
-            ControlFlow.DoWhileLoop();
-            ControlFlow.BreakStatement();
-            ControlFlow.ContinueStatement();
-            //////////////////////////////////////////////////////////
-            //ControlFlow.SwitchStatement();
-            //ControlFlow.SwitchStatement();
-        }
     }
 }
-
-
-
-//public static void Test() { Console.ReadLine(); }
-//public static void Test() { Console.ReadLine(); }
-//public static void Test() { Console.ReadLine(); }
-//public static void Test() { Console.ReadLine(); }
