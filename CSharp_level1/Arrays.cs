@@ -18,11 +18,27 @@ namespace CSharp_level1
             for (int i = 0; i < ints.Length; i++)
             {
                 Console.Write(ints[i] + " ");
-
             }
             Console.ReadLine();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void ArrayDeclaration()
+        {
+            // declare an array
+            int[] age;
+            // allocate memory for array
+            age = new int[30];
+            Random rnd = new Random();
+            for (int i = 0; i < age.Length; i++)
+            {
+                age[i] = rnd.Next(0, 113);
+            }
+
+            for (int i = 0; i < age.Length; i++)
+            {
+                Console.Write(age[i] + " ");
+            }
+            Console.ReadLine();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }

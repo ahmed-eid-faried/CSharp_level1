@@ -73,8 +73,8 @@ namespace CSharp_level1
             //ControlFlow.BreakStatement();
             //ControlFlow.ContinueStatement();
             ////////////////////////////////////////////////////////////
-            Arrays.ArraysAreBound();
             //Arrays.ArraysAreBound();
+            Arrays.ArrayDeclaration();
             //Arrays.ArraysAreBound();
             //Arrays.ArraysAreBound();
             //Arrays.ArraysAreBound();
