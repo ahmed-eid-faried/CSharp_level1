@@ -454,8 +454,8 @@ namespace CSharp_level1
             //ControlFlow.TernaryOperator();
             //ControlFlow.ForLoop();
             //ControlFlow.WhileLoop();
-            ControlFlow.DoWhileLoop();
-            //ControlFlow.SwitchStatement();
+            //ControlFlow.DoWhileLoop();
+            ControlFlow.BreakStatement();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();
