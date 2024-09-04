@@ -438,9 +438,14 @@ namespace CSharp_level1
             //CastingTypes.EnumsConversion();
             //UserInput.ReadLine();
             //UserInput.UserInputAndNumbers();
-            AssignmentOperators.ArithmeticOperators();
-            //CastingTypes.ExplicitCasting();
-            //CastingTypes.ExplicitCasting();
+            //Operators.ArithmeticOperators();
+            Operators.AssignmentOperators();
+            //Operators.ArithmeticOperators();
+            //Operators.ArithmeticOperators();
+            //Operators.ArithmeticOperators();
+            //Operators.ArithmeticOperators();
+            //Operators.ArithmeticOperators();
+            //Operators.ArithmeticOperators(); 
         }
     }
 }

@@ -357,9 +357,37 @@ namespace CSharp_level1
             Console.ReadKey();
         }
     }
-    internal class AssignmentOperators
+    internal class Operators
     {
-        //public static void Test() { Console.ReadLine(); }
+        public static void AssignmentOperators()
+        {
+            Console.WriteLine("================================");
+            int x = 10;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("================================");
+            Console.WriteLine("x += 5 ===>> x + 5 ===>> " + (x += 5));
+            Console.WriteLine("x -= 5 ===>> x - 5 ===>> " + (x -= 5));
+            Console.WriteLine("x *= 5 ===>> x * 5 ===>> " + (x *= 5));
+            Console.WriteLine("x /= 5 ===>> x / 5 ===>> " + (x /= 5));
+            Console.WriteLine("x %= 5 ===>> x % 5 ===>> " + (x %= 5));
+            Console.WriteLine("================================");
+            x = 10;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("============Bitwise=============");
+            Console.WriteLine("x &= 5 ===>> x & 5 ===>> " + (x &= 5));
+            Console.WriteLine("x |= 5 ===>> x | 5 ===>> " + (x |= 5));
+            Console.WriteLine("x ^= 5 ===>> x ^ 5 ===>> " + (x ^= 5));
+            Console.WriteLine("================================");
+            x = 10;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("============Bitwise=============");
+            Console.WriteLine("x <<= 5 ===>> x << 5 ===>> " + (x <<= 5));
+            Console.WriteLine("x >>= 5 ===>> x >> 5 ===>> " + (x >>= 5));
+            //Console.WriteLine("x => x*x ===>> Return x*x ===>> " + (x => x*x));
+            Console.WriteLine("================================");
+
+            Console.ReadLine();
+        }
         public static void ArithmeticOperators()
         {
 
