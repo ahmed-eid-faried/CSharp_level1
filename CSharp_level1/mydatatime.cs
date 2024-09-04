@@ -440,7 +440,8 @@ namespace CSharp_level1
             Console.WriteLine("=====================================================");
             Console.ReadLine();
         }
-        public static void UnaryOperators() {
+        public static void UnaryOperators()
+        {
             int number = 10, result;
             bool flag = true;
 
@@ -473,7 +474,15 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void TernaryOperator() {
+            int number = 12;
+            string result;
+
+            result = (number % 2 == 0) ? "Even Number" : "Odd Number";
+            Console.WriteLine("{0} is {1}", number, result);
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
