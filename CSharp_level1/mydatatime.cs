@@ -507,8 +507,8 @@ namespace CSharp_level1
             Console.WriteLine("================================");
             // 0  ===>> 1   // بيعكس الكل 
             // 1  ===>> 0   // بيعكس الكل 
-            Console.WriteLine("  x ===>>  " + (x));
-            Console.WriteLine(" ~x ===>>  " + (~x));
+            Console.WriteLine("  x ===>>  " + (x) + "  \n===>> " + ($"({Convert.ToString(x, 2).PadLeft(8, '0')} in binary)"));
+            Console.WriteLine(" ~x ===>>  " + (~x) + "  \n===>> " + ($"({Convert.ToString(~x, 2).PadLeft(8, '0')} in binary)"));
             Console.WriteLine("================================");
             x = 10;
             Console.WriteLine("x = " + x);
@@ -560,23 +560,23 @@ namespace CSharp_level1
 
             Console.ReadLine();
         }
-        public static void BitwiseComplement2()
-        {
-            int number = 5;
-            int result = ~number;
-            Console.WriteLine("\nExample with 8-bit system using Two's Complement notation:");
-            Console.WriteLine($"a = {number}  (0000 0101 in binary)");
-            Console.WriteLine($"b = {~number} (1111 1010 in binary)");
+        //public static void BitwiseComplement2()
+        //{
+        //    int number = 5;
+        //    int result = ~number;
+        //    Console.WriteLine("\nExample with 8-bit system using Two's Complement notation:");
+        //    Console.WriteLine($"a = {number}  (0000 0101 in binary)");
+        //    Console.WriteLine($"b = {~number} (1111 1010 in binary)");
 
-            Console.WriteLine("Original number: " + number);   // Outputs: 5
-            Console.WriteLine("Bitwise Complement: " + result); // Outputs: -6
+        //    Console.WriteLine("Original number: " + number);   // Outputs: 5
+        //    Console.WriteLine("Bitwise Complement: " + result); // Outputs: -6
 
-            // Display binary representation
-            Console.WriteLine("Binary of original number: " + Convert.ToString(number, 2).PadLeft(8, '0'));
-            Console.WriteLine("Binary of complement: " + Convert.ToString(result, 2).PadLeft(8, '0'));
+        //    // Display binary representation
+        //    Console.WriteLine("Binary of original number: " + Convert.ToString(number, 2).PadLeft(8, '0'));
+        //    Console.WriteLine("Binary of complement: " + Convert.ToString(result, 2).PadLeft(8, '0'));
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
 
         public static void BitwiseComplement()
         {
