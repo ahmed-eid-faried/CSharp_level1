@@ -596,6 +596,23 @@ namespace CSharp_level1
 
             Console.ReadLine();
         }
+        public static void ShiftOperations()
+        {
+            int a = 5; // Binary: 0000 0101
+            int b = a << 2; // Shift left by 2 positions
+            int c = 20; // Binary: 0001 0100
+            int d = c >> 2; // Shift right by 2 positions
+
+            Console.WriteLine("Original number (a): " + a); // Outputs: 5
+            Console.WriteLine("After left shift by 2 (a << 2): " + b); // Outputs: 20
+            Console.WriteLine("Binary of a << 2: " + Convert.ToString(b, 2).PadLeft(8, '0')); // Binary: 00010100
+
+            Console.WriteLine("Original number (c): " + c); // Outputs: 20
+            Console.WriteLine("After right shift by 2 (c >> 2): " + d); // Outputs: 5
+            Console.WriteLine("Binary of c >> 2: " + Convert.ToString(d, 2).PadLeft(8, '0')); // Binary: 00000101
+
+            Console.ReadLine();
+        }
 
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
