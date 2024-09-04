@@ -78,10 +78,12 @@ namespace CSharp_level1
             //Arrays.AccessArrayElements();
             //Arrays.TwoDimensionalArray();
             //Arrays.ForEachLoop();
-            Arrays.SystemLinqCalculationOnNumList();
-            //Arrays.ArraysAreBound();
-            //Arrays.ArraysAreBound();
-            //Arrays.ArraysAreBound();
+            //Arrays.SystemLinqCalculationOnNumList();
+            ////////////////////////////////////////////////////////////
+            clsMath.MathMethods();
+            //clsMath.MathMethods();
+            //clsMath.MathMethods();
+   
         }
     }
 }

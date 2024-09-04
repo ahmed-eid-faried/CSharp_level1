@@ -160,12 +160,5 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
     }
 }

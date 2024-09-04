@@ -47,6 +47,7 @@
     <Compile Include="Basic.cs" />
     <Compile Include="CastingTypes.cs" />
     <Compile Include="ControlFlow.cs" />
+    <Compile Include="Math.cs" />
     <Compile Include="mydatatime.cs" />
     <Compile Include="MyString.cs" />
     <Compile Include="Operators.cs" />
