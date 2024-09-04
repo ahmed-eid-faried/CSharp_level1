@@ -437,8 +437,8 @@ namespace CSharp_level1
             //CastingTypes.TypeConversionMethods();
             //CastingTypes.EnumsConversion();
             //UserInput.ReadLine();
-            UserInput.UserInputAndNumbers();
-            //CastingTypes.ExplicitCasting();
+            //UserInput.UserInputAndNumbers();
+            AssignmentOperators.ArithmeticOperators();
             //CastingTypes.ExplicitCasting();
             //CastingTypes.ExplicitCasting();
         }
