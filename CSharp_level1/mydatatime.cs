@@ -474,7 +474,8 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        public static void TernaryOperator() {
+        public static void TernaryOperator()
+        {
             int number = 12;
             string result;
 
@@ -483,7 +484,24 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void BitwiseAndBitShiftOperators()
+        {
+            int x = 10;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("============Bitwise=============");
+            Console.WriteLine("x & 5 ===>>  " + (x & 5));
+            Console.WriteLine("x | 5 ===>>  " + (x | 5));
+            Console.WriteLine("x ^ 5 ===>>  " + (x ^ 5));
+            Console.WriteLine("================================");
+            x = 10;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("============Bitwise=============");
+            Console.WriteLine("x <<= 5 ===>> x << 5 ===>> " + (x <<= 5));
+            Console.WriteLine("x >>= 5 ===>> x >> 5 ===>> " + (x >>= 5));
+            Console.WriteLine("================================");
+
+            Console.ReadLine();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
