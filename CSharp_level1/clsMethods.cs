@@ -30,9 +30,26 @@ namespace CSharp_level1
             PrintMyInfo("AHMED MADY", 27, "Egypt");
             Console.ReadKey();
         }
+        static string GetMyName()
+        {
+            return "Ahmed Mady";
 
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
+        }
+        public static void ReturnValues()
+        {
+            Console.WriteLine("My Name is {0}", GetMyName());
+            Console.ReadLine();
+        }
+        static void MyMethod(string child1, string child2, string child3)
+        {
+            Console.WriteLine("The youngest child is: " + child3);
+        }
+        public static void Test()
+        {
+            //see the order of sending parameters is not important.
+            MyMethod(child3: "Omar", child1: "Saqer", child2: "Hamza");
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
     }
 }

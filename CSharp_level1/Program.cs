@@ -83,7 +83,8 @@ namespace CSharp_level1
             //clsMath.MathMethods();
             ////////////////////////////////////////////////////////////
             //clsMethods.Methods();
-            clsMethods.ParametersAndArguments();
+            //clsMethods.ParametersAndArguments();
+            clsMethods.ReturnValues();
 
         }
     }
