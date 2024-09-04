@@ -449,19 +449,26 @@ namespace CSharp_level1
 
             result = -number;
             Console.WriteLine("-number = " + result);
-
+            Console.WriteLine(("====================================="));
             result = ++number;
             Console.WriteLine("++number = " + result);
 
             result = --number;
             Console.WriteLine("--number = " + result);
-
+            Console.WriteLine(("====================================="));
             Console.WriteLine("!flag = " + (!flag));
-
+            Console.WriteLine(("====================================="));
             Console.WriteLine((number++));
             Console.WriteLine((number));
 
             Console.WriteLine((++number));
+            Console.WriteLine((number));
+
+            Console.WriteLine(("====================================="));
+            Console.WriteLine((number--));
+            Console.WriteLine((number));
+
+            Console.WriteLine((--number));
             Console.WriteLine((number));
 
             Console.ReadKey();
