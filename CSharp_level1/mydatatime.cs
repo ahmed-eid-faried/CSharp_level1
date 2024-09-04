@@ -823,7 +823,18 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void DoWhileLoop()
+        {
+            int i = 1;
+            do
+            {
+                Console.WriteLine("C# while Loop: Iteration {0}", i);
+                i++;
+
+            } while (i <= 5);
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
