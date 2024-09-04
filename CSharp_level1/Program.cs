@@ -449,9 +449,9 @@ namespace CSharp_level1
             //Operators.ShiftOperations(); 
             //ControlFlow.IfElseIfAndNestedIfStatement();
             //ControlFlow.SwitchStatement();
-            ControlFlow.SimpleCalculator();
-            //ControlFlow.SwitchStatement();
-            //ControlFlow.SwitchStatement();
+            //ControlFlow.SimpleCalculator();
+            //ControlFlow.StringCompare();
+            ControlFlow.TernaryOperator();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();

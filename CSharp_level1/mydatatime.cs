@@ -770,7 +770,17 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+
+        public static void TernaryOperator()
+        {
+            double number; bool isEven;
+            Console.Write("Number: ");
+            number = Convert.ToDouble(Console.ReadLine());
+            isEven = (number % 2 == 0) ? true : false;
+            Console.WriteLine("\nisEven  ===>> " + isEven);
+
+            Console.ReadLine();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
