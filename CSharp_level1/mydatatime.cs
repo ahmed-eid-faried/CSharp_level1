@@ -363,13 +363,16 @@ namespace CSharp_level1
         public static void ArithmeticOperators()
         {
 
-            int x = 50;
+            int x = 51;
             int y = 10;
-            Console.WriteLine(x + y);
-            Console.WriteLine(x - y);
-            Console.WriteLine(x * y);
-            Console.WriteLine(x / y);
-            Console.WriteLine(x % y);
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+            Console.WriteLine("======================");
+            Console.WriteLine("x + y = " + (x + y));
+            Console.WriteLine("x - y = " + (x - y));
+            Console.WriteLine("x * y = " + (x * y));
+            Console.WriteLine("x / y = " + (x / y));
+            Console.WriteLine("x % y = " + (x % y));
 
             Console.ReadLine();
         }
