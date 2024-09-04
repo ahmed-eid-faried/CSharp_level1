@@ -16,17 +16,19 @@ namespace CSharp_level1
         {
             PrintMyName();
             Console.ReadKey();
-
         }
+
         static void PrintMyInfo(string Name, byte Age)
         {
             Console.WriteLine("Name= {0} , Age= {1}", Name, Age);
         }
-        public static void Test()
+
+        public static void ParametersAndArguments()
         {
             PrintMyInfo("AHMED MADY", 27);
             Console.ReadKey();
         }
+
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
