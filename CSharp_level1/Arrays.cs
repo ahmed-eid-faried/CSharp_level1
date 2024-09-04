@@ -104,7 +104,6 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-
         public static void ForEachLoop()
         {
             char[] gender = { 'm', 'f', 'm', 'm', 'm', 'f', 'f', 'm', 'm', 'f' };
@@ -119,8 +118,20 @@ namespace CSharp_level1
             Console.WriteLine("Number of male = {0}", male);
             Console.WriteLine("Number of female = {0}", female);
 
+            Console.WriteLine("=====================================================");
+
+            char[] myArray = { 'H', 'e', 'l', 'l', 'o' };
+
+            foreach (char ch in myArray)
+            {
+                Console.WriteLine(ch);
+            }
+
+            Console.ReadKey();
+
             Console.ReadKey();
         }
+
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
