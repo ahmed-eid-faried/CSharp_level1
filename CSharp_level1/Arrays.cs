@@ -131,18 +131,32 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-
         public static void FindMinimumAndMaximumElement()
         {
             // Note that we used System.Linq above.
 
             int[] numbers = { 51, -1, 2, 14, 18, 40, 178 };
+            foreach (int i in numbers)
+            {
+                Console.Write(i + " ");
+            }
 
+            Console.WriteLine("\n");
             // get the minimum element
             Console.WriteLine("Smallest  Element: " + numbers.Min());
 
             // Max() returns the largest number in array
             Console.WriteLine("Largest Element: " + numbers.Max());
+
+
+            // compute Count
+            Console.WriteLine("Count : " + numbers.Count());
+
+            // compute Sum
+            Console.WriteLine("Sum : " + numbers.Sum());
+
+            // compute the average
+            Console.WriteLine("Average: " + numbers.Average());
 
             Console.ReadKey();
         }
