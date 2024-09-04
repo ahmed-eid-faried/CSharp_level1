@@ -30,13 +30,35 @@ namespace CSharp_level1
             Random rnd = new Random();
             for (int i = 0; i < age.Length; i++)
             {
-                age[i] = rnd.Next(0, 113);
+                age[i] = rnd.Next(0, 113);// returns random integers >= 0 and < 113
             }
 
             for (int i = 0; i < age.Length; i++)
             {
                 Console.Write(age[i] + " ");
             }
+
+            Console.WriteLine("\n");
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.Write(numbers[i] + " ");
+            }
+
+            Console.WriteLine("\n");
+            // declare an array
+            int[] ints = new int[5];
+            //initializing array
+            ints[0] = 0;
+            ints[1] = 5;
+            ints[2] = 55;
+            ints[3] = 555;
+            ints[4] = 5555;
+            for (int i = 0; i < ints.Length; i++)
+            {
+                Console.Write(ints[i] + " ");
+            }
+
             Console.ReadLine();
         }
         //public static void Test() { Console.ReadLine(); }
