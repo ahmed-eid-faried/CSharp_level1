@@ -48,6 +48,7 @@
     <Compile Include="CastingTypes.cs" />
     <Compile Include="clsMethods.cs" />
     <Compile Include="ControlFlow.cs" />
+    <Compile Include="Exceptions.cs" />
     <Compile Include="Math.cs" />
     <Compile Include="mydatatime.cs" />
     <Compile Include="MyString.cs" />
