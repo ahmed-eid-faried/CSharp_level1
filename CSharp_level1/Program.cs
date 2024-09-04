@@ -442,9 +442,9 @@ namespace CSharp_level1
             //Operators.AssignmentOperators();
             //Operators.RelationalOperators();
             //Operators.LogicalOperators();
-            Operators.UnaryOperators();
-            //Operators.ArithmeticOperators();
-            //Operators.ArithmeticOperators();
+            //Operators.UnaryOperators();
+            //Operators.BitwiseAndBitShiftOperators();
+            Operators.ExplainBitwiseXOR();
             //Operators.ArithmeticOperators(); 
         }
     }

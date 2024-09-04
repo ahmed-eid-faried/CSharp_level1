@@ -489,20 +489,72 @@ namespace CSharp_level1
             int x = 10;
             Console.WriteLine("x = " + x);
             Console.WriteLine("============Bitwise=============");
+            // 1  &  1  ===>> 1
+            // 1  &  0  ===>> 0
+            // 0  &  1  ===>> 0
+            // 0  &  0  ===>> 0
             Console.WriteLine("x & 5 ===>>  " + (x & 5));
+            // 1  |  1  ===>> 1
+            // 1  |  0  ===>> 1
+            // 0  |  1  ===>> 1
+            // 0  |  0  ===>> 0
             Console.WriteLine("x | 5 ===>>  " + (x | 5));
+            // 1  ^  1  ===>> 0  //false==>  زى بعض
+            // 1  ^  0  ===>> 1  //true ==>  مختلفين
+            // 0  ^  1  ===>> 1  //true ==>  مختلفين
+            // 0  ^  0  ===>> 0  //false==>  زى بعض
             Console.WriteLine("x ^ 5 ===>>  " + (x ^ 5));
             Console.WriteLine("================================");
             x = 10;
             Console.WriteLine("x = " + x);
-            Console.WriteLine("============Bitwise=============");
-            Console.WriteLine("x <<= 5 ===>> x << 5 ===>> " + (x <<= 5));
-            Console.WriteLine("x >>= 5 ===>> x >> 5 ===>> " + (x >>= 5));
+            Console.WriteLine("==============Shift=============");
+            Console.WriteLine("x << 5 ===>>  " + (x << 5));
+            Console.WriteLine("x >> 5 ===>>  " + (x >> 5));
             Console.WriteLine("================================");
 
             Console.ReadLine();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void ExplainBitwiseXOR()
+        {
+            // Header for the table
+            Console.WriteLine("Bit 1  Bit 2  Result (XOR)");
+            Console.WriteLine("===========================");
+
+            // Example 1: 0 XOR 0
+            int bit1 = 0;
+            int bit2 = 0;
+            int result = bit1 ^ bit2;  // XOR operation
+            Console.WriteLine($"{bit1}      {bit2}      {result}");
+
+            // Example 2: 0 XOR 1
+            bit1 = 0;
+            bit2 = 1;
+            result = bit1 ^ bit2;  // XOR operation
+            Console.WriteLine($"{bit1}      {bit2}      {result}");
+
+            // Example 3: 1 XOR 0
+            bit1 = 1;
+            bit2 = 0;
+            result = bit1 ^ bit2;  // XOR operation
+            Console.WriteLine($"{bit1}      {bit2}      {result}");
+
+            // Example 4: 1 XOR 1
+            bit1 = 1;
+            bit2 = 1;
+            result = bit1 ^ bit2;  // XOR operation
+            Console.WriteLine($"{bit1}      {bit2}      {result}");
+
+            // Additional example to show XOR in action with larger numbers
+            int a = 5;  // 0101 in binary
+            int b = 3;  // 0011 in binary
+            int xorResult = a ^ b;  // 0110 in binary, which equals 6
+            Console.WriteLine("\nExample with larger numbers:");
+            Console.WriteLine($"a = {a} (0101 in binary)");
+            Console.WriteLine($"b = {b} (0011 in binary)");
+            Console.WriteLine($"a ^ b = {xorResult} (0110 in binary, which equals 6)");
+     
+            Console.ReadLine();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
