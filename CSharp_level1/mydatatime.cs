@@ -440,7 +440,32 @@ namespace CSharp_level1
             Console.WriteLine("=====================================================");
             Console.ReadLine();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void UnaryOperators() {
+            int number = 10, result;
+            bool flag = true;
+
+            result = +number;
+            Console.WriteLine("+number = " + result);
+
+            result = -number;
+            Console.WriteLine("-number = " + result);
+
+            result = ++number;
+            Console.WriteLine("++number = " + result);
+
+            result = --number;
+            Console.WriteLine("--number = " + result);
+
+            Console.WriteLine("!flag = " + (!flag));
+
+            Console.WriteLine((number++));
+            Console.WriteLine((number));
+
+            Console.WriteLine((++number));
+            Console.WriteLine((number));
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }

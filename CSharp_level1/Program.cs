@@ -441,8 +441,8 @@ namespace CSharp_level1
             //Operators.ArithmeticOperators();
             //Operators.AssignmentOperators();
             //Operators.RelationalOperators();
-            Operators.LogicalOperators();
-            //Operators.ArithmeticOperators();
+            //Operators.LogicalOperators();
+            Operators.UnaryOperators();
             //Operators.ArithmeticOperators();
             //Operators.ArithmeticOperators();
             //Operators.ArithmeticOperators(); 
