@@ -81,6 +81,7 @@ namespace CSharp_level1
             //Arrays.SystemLinqCalculationOnNumList();
             ////////////////////////////////////////////////////////////
             //clsMath.MathMethods();
+            clsMath.RandomFunction();
             ////////////////////////////////////////////////////////////
             //clsMethods.Methods();
             //clsMethods.ParametersAndArguments();
@@ -88,7 +89,7 @@ namespace CSharp_level1
             //clsMethods.NamedArguments();
             //clsMethods.SumOverloading();
             ////////////////////////////////////////////////////////////
-            Exceptions.TryCatch();
+            //Exceptions.TryCatch();
 
         }
     }

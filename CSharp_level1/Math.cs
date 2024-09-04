@@ -18,6 +18,22 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-    
+        public static void RandomFunction()
+        {
+            Random rnd = new Random();
+            for (int j = 0; j < 4; j++)
+            {
+                Console.WriteLine("Random from 0 TO 100 ===>> " + rnd.Next(0, 100)); // returns random integers >= 0 and < 100
+                Console.Write((char)65 + " ===>> ");
+                Console.WriteLine((char)90);
+                Console.WriteLine("Random from A TO Z ===>> 65 ===>> 90 ===>> " + (char)(rnd.Next(65, 91))); // returns random integers >= 0 and < 100
+                Console.WriteLine("===================================================");
+                Console.Write((char)97 + " ===>> ");
+                Console.WriteLine((char)122);
+                Console.WriteLine("Random from a TO z ===>> 97 ===>> 122 ===>> " + (char)(rnd.Next(97, 123))); // returns random integers >= 0 and < 100
+                Console.ReadKey();
+
+            }
+        }
     }
 }
