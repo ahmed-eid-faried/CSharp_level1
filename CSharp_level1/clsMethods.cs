@@ -44,12 +44,16 @@ namespace CSharp_level1
         {
             Console.WriteLine("The youngest child is: " + child3);
         }
-        public static void Test()
+        public static void NamedArguments()
         {
             //see the order of sending parameters is not important.
-            MyMethod(child3: "Omar", child1: "Saqer", child2: "Hamza");
+            MyMethod("Omar", "Saqer", "AHMED");
+            //NamedArguments
+            MyMethod(child3: "Omar", child2: "Saqer", child1: "AHMED");
             Console.ReadKey();
         }
+
+
         //public static void Test() { Console.ReadLine(); }
     }
 }
