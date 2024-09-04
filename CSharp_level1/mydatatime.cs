@@ -404,7 +404,23 @@ namespace CSharp_level1
 
             Console.ReadLine();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void RelationalOperators()
+        {
+
+            int x = 20;
+            int y = 10;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+            Console.WriteLine("======================");
+            Console.WriteLine("x == y = " + (x == y));
+            Console.WriteLine("x != y = " + (x != y));
+            Console.WriteLine("x > y = " + (x > y));
+            Console.WriteLine("x >= y = " + (x >= y));
+            Console.WriteLine("x < y = " + (x < y));
+            Console.WriteLine("x <= y = " + (x <= y));
+
+            Console.ReadLine();
+        }
         //public static void Test() { Console.ReadLine(); }     
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
