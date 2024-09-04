@@ -148,7 +148,6 @@ namespace CSharp_level1
             // Max() returns the largest number in array
             Console.WriteLine("Largest Element: " + numbers.Max());
 
-
             // compute Count
             Console.WriteLine("Count : " + numbers.Count());
 
@@ -158,7 +157,6 @@ namespace CSharp_level1
             // compute the average
             Console.WriteLine("Average: " + numbers.Average());
             Console.WriteLine("Round Of Average: " + Math.Round(numbers.Average()));
-
 
             Console.ReadKey();
         }
