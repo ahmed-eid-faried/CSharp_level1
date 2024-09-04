@@ -46,6 +46,7 @@
     <Compile Include="Arrays.cs" />
     <Compile Include="Basic.cs" />
     <Compile Include="CastingTypes.cs" />
+    <Compile Include="clsMethods.cs" />
     <Compile Include="ControlFlow.cs" />
     <Compile Include="Math.cs" />
     <Compile Include="mydatatime.cs" />

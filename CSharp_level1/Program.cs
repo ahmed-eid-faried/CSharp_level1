@@ -80,10 +80,11 @@ namespace CSharp_level1
             //Arrays.ForEachLoop();
             //Arrays.SystemLinqCalculationOnNumList();
             ////////////////////////////////////////////////////////////
-            clsMath.MathMethods();
             //clsMath.MathMethods();
+            ////////////////////////////////////////////////////////////
+            clsMethods.Methods();
             //clsMath.MathMethods();
-   
+
         }
     }
 }
