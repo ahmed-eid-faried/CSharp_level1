@@ -812,7 +812,17 @@ namespace CSharp_level1
             }
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void WhileLoop()
+        {
+            int i = 1;
+            while (i <= 5)
+            {
+                Console.WriteLine("C# while Loop: Iteration {0}", i);
+                i++;
+            }
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
