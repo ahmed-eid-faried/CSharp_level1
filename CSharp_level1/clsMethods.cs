@@ -18,14 +18,16 @@ namespace CSharp_level1
             Console.ReadKey();
         }
 
-        static void PrintMyInfo(string Name, byte Age)
+        static void PrintMyInfo(string Name, Nullable<byte> Age = null, string Address = "No Address")
         {
-            Console.WriteLine("Name= {0} , Age= {1}", Name, Age);
+            Console.WriteLine("Name = {0} , Age = {1}, Address = {2}", Name, Age, Address);
         }
 
         public static void ParametersAndArguments()
         {
+            PrintMyInfo("AHMED MADY");
             PrintMyInfo("AHMED MADY", 27);
+            PrintMyInfo("AHMED MADY", 27, "Egypt");
             Console.ReadKey();
         }
 

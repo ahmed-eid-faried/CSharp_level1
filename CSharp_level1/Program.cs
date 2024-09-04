@@ -82,8 +82,8 @@ namespace CSharp_level1
             ////////////////////////////////////////////////////////////
             //clsMath.MathMethods();
             ////////////////////////////////////////////////////////////
-            clsMethods.Methods();
-            //clsMath.MathMethods();
+            //clsMethods.Methods();
+            clsMethods.ParametersAndArguments();
 
         }
     }

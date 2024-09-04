@@ -18,19 +18,6 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        static void PrintMyName()
-        {
-            Console.WriteLine("Ahmed Mady");
-        }
-        public static void Methods()
-        {
-            PrintMyName();
-            Console.ReadKey();
-
-        }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
-        //public static void Test() { Console.ReadLine(); }
+    
     }
 }
