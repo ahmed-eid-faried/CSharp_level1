@@ -451,8 +451,8 @@ namespace CSharp_level1
             //ControlFlow.SwitchStatement();
             //ControlFlow.SimpleCalculator();
             //ControlFlow.StringCompare();
-            ControlFlow.TernaryOperator();
-            //ControlFlow.SwitchStatement();
+            //ControlFlow.TernaryOperator();
+            ControlFlow.ForLoop();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();
