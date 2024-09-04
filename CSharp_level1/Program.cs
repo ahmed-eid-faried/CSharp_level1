@@ -84,7 +84,9 @@ namespace CSharp_level1
             ////////////////////////////////////////////////////////////
             //clsMethods.Methods();
             //clsMethods.ParametersAndArguments();
-            clsMethods.ReturnValues();
+            //clsMethods.ReturnValues();
+            clsMethods.NamedArguments();
+            clsMethods.SumOverloading();
 
         }
     }
