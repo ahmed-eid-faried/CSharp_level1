@@ -658,6 +658,64 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
+        public static void SwitchStatement()
+        {
+            //switch statement with grouped cases
+            char ch;
+            Console.WriteLine("Enter a letter");
+            ch = Convert.ToChar(Console.ReadLine());
+            switch (Char.ToLower(ch))
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine("Vowel");
+                    break;
+                default:
+                    Console.WriteLine("Not a vowel");
+                    break;
+            }
+            Console.WriteLine("===============================================");
+            char ch2;
+            Console.WriteLine("Enter a letter?");
+            ch2 = Convert.ToChar(Console.ReadLine());
+
+            switch (Char.ToLower(ch2))
+            {
+                case 'a':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("Vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("Vowel");
+                    break;
+                default:
+                    Console.WriteLine("Not a vowel");
+                    break;
+            }
+
+
+            Console.ReadKey();
+        }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
+        //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
     }
