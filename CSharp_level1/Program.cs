@@ -455,8 +455,8 @@ namespace CSharp_level1
             //ControlFlow.ForLoop();
             //ControlFlow.WhileLoop();
             //ControlFlow.DoWhileLoop();
-            ControlFlow.BreakStatement();
-            //ControlFlow.SwitchStatement();
+            //ControlFlow.BreakStatement();
+            ControlFlow.ContinueStatement();
             //ControlFlow.SwitchStatement();
             //ControlFlow.SwitchStatement();
         }

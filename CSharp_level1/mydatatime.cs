@@ -842,8 +842,20 @@ namespace CSharp_level1
             {
                 Console.WriteLine("C# while Loop: Iteration {0}", i);
                 if (i == 3) break;
-                i++;
+                 i++;
             } while (i <= 5);
+
+            Console.ReadKey();
+        }
+        public static void ContinueStatement()
+        {
+            int i = 0;
+            do
+            {
+                i++;
+                if (i == 3) continue;
+                Console.WriteLine("C# while Loop: Iteration {0}", i);
+            } while (i < 5);
 
             Console.ReadKey();
         }
