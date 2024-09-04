@@ -448,7 +448,17 @@ namespace CSharp_level1
             //Operators.BitwiseComplement(); 
             //Operators.ShiftOperations(); 
             //ControlFlow.IfElseIfAndNestedIfStatement();
-            ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            ControlFlow.SimpleCalculator();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
+            //ControlFlow.SwitchStatement();
         }
     }
 }

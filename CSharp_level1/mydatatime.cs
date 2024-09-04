@@ -720,7 +720,6 @@ namespace CSharp_level1
             second = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter operator (+, -, *, /): ");
             op = (char)Console.Read();
-
             switch (op)
             {
                 case '+':
@@ -751,7 +750,26 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void StringCompare()
+        {
+            Console.Write("Name1: ");
+            string Name1 = Console.ReadLine().ToLower();
+            Console.Write("\nName2: ");
+            string Name2 = Console.ReadLine().ToLower();
+
+            switch (Name1 == Name2)
+            {
+                case true:
+                    Console.WriteLine("Yes Name Matched!");
+                    break;
+                default:
+                    Console.WriteLine("No Name Matched!");
+                    break;
+
+            }
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
