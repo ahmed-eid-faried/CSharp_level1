@@ -444,8 +444,8 @@ namespace CSharp_level1
             //Operators.LogicalOperators();
             //Operators.UnaryOperators();
             //Operators.BitwiseAndBitShiftOperators();
-            Operators.ExplainBitwiseXOR();
-            //Operators.ArithmeticOperators(); 
+            //Operators.ExplainBitwiseXOR();
+            Operators.BitwiseComplement(); 
         }
     }
 }
