@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays.cs" />
     <Compile Include="Basic.cs" />
     <Compile Include="CastingTypes.cs" />
     <Compile Include="ControlFlow.cs" />
