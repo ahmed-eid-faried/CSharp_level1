@@ -421,7 +421,25 @@ namespace CSharp_level1
 
             Console.ReadLine();
         }
-        //public static void Test() { Console.ReadLine(); }     
+
+        public static void LogicalOperators()
+        {
+            Console.WriteLine("Op1 " + "  " + " Op2" + "   => " + ("And(&&)") + " " + (" OR(||) "));
+            Console.WriteLine("=====================================================");
+            bool x = true, y = true;
+            Console.WriteLine(x.ToString().PadRight(5) + "  " + y.ToString().PadRight(5) + " => " + (x && y).ToString().PadRight(5) + "     " + (x || y).ToString().PadRight(5));
+            Console.WriteLine("=====================================================");
+            x = true; y = false;
+            Console.WriteLine(x.ToString().PadRight(5) + "  " + y.ToString().PadRight(5) + " => " + (x && y).ToString().PadRight(5) + "     " + (x || y).ToString().PadRight(5));
+            Console.WriteLine("=====================================================");
+            x = false; y = true;
+            Console.WriteLine(x.ToString().PadRight(5) + "  " + y.ToString().PadRight(5) + " => " + (x && y).ToString().PadRight(5) + "     " + (x || y).ToString().PadRight(5));
+            Console.WriteLine("=====================================================");
+            x = false; y = false;
+            Console.WriteLine(x.ToString().PadRight(5) + "  " + y.ToString().PadRight(5) + " => " + (x && y).ToString().PadRight(5) + "     " + (x || y).ToString().PadRight(5));
+            Console.WriteLine("=====================================================");
+            Console.ReadLine();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }

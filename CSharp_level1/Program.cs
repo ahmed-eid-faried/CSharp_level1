@@ -439,9 +439,9 @@ namespace CSharp_level1
             //UserInput.ReadLine();
             //UserInput.UserInputAndNumbers();
             //Operators.ArithmeticOperators();
-            Operators.AssignmentOperators();
-            //Operators.ArithmeticOperators();
-            //Operators.ArithmeticOperators();
+            //Operators.AssignmentOperators();
+            //Operators.RelationalOperators();
+            Operators.LogicalOperators();
             //Operators.ArithmeticOperators();
             //Operators.ArithmeticOperators();
             //Operators.ArithmeticOperators();
