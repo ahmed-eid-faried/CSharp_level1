@@ -131,7 +131,7 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        public static void FindMinimumAndMaximumElement()
+        public static void SystemLinqCalculationOnNumList()
         {
             // Note that we used System.Linq above.
 
@@ -157,6 +157,8 @@ namespace CSharp_level1
 
             // compute the average
             Console.WriteLine("Average: " + numbers.Average());
+            Console.WriteLine("Round Of Average: " + Math.Round(numbers.Average()));
+
 
             Console.ReadKey();
         }
