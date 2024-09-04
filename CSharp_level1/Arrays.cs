@@ -85,7 +85,25 @@ namespace CSharp_level1
 
             Console.ReadKey();
         }
-        //public static void Test() { Console.ReadLine(); }
+        public static void TwoDimensionalArray()
+        {
+            //initializing 2D array
+            int[,] numbers = { { 12, 13 }, { 55, 77 } };
+
+            // access first element from the first row
+            Console.WriteLine("Element at index [0, 0] : " + numbers[0, 0]);
+
+            // access second element from first row
+            Console.WriteLine("Element at index [0, 1] : " + numbers[0, 1]);
+
+            // access first element from second row
+            Console.WriteLine("Element at index [1, 0] : " + numbers[1, 0]);
+
+            // access second element from second row
+            Console.WriteLine("Element at index [1, 1] : " + numbers[1, 1]);
+
+            Console.ReadKey();
+        }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
         //public static void Test() { Console.ReadLine(); }
