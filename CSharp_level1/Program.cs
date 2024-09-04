@@ -77,8 +77,8 @@ namespace CSharp_level1
             //Arrays.ArrayDeclaration();
             //Arrays.AccessArrayElements();
             //Arrays.TwoDimensionalArray();
-            Arrays.ForEachLoop();
-            //Arrays.ArraysAreBound();
+            //Arrays.ForEachLoop();
+            Arrays.FindMinimumAndMaximumElement();
             //Arrays.ArraysAreBound();
             //Arrays.ArraysAreBound();
             //Arrays.ArraysAreBound();
